@@ -1,25 +1,29 @@
+
 let wins = 0
 let losses = 0
 let userScore = 0
 let goalScore = 0
-// random gem Values
+
 let greenValue = Math.floor(Math.random() * 12) + 1
 let blueValue = Math.floor(Math.random() * 12) + 1
 let redValue = Math.floor(Math.random() * 12) + 1
 let yellowValue = Math.floor(Math.random() * 12) + 1
 
 let currentGoal = Math.floor(Math.random() * 100) + 40
-// random number to start
 
-// reset the game
+
+// resets the game
 let reset = function() {
     currentGoal = Math.floor(Math.random() * 100) + 40
-    let greenValue = Math.floor(Math.random() * 12) + 1
-    let blueValue = Math.floor(Math.random() * 12) + 1
-    let redValue = Math.floor(Math.random() * 12) + 1
-    let yellowValue = Math.floor(Math.random() * 12) + 1
+  document.getElementById('goal').innerHTML = 'current goal: ' + currentGoal
+     greenValue = Math.floor(Math.random() * 12) + 1
+     blueValue = Math.floor(Math.random() * 12) + 1
+     redValue = Math.floor(Math.random() * 12) + 1
+     yellowValue = Math.floor(Math.random() * 12) + 1
+     userScore = 0
   document.getElementById('totalScore').innerHTML = 'total score: ' + userScore
 }
+// random number to start
 let randomNumber = function () {
   document.getElementById('goal').innerHTML = 'current goal: ' + currentGoal
 }
@@ -91,6 +95,8 @@ document.getElementById('yellow').addEventListener('click', function () {
     loser()
   }
 })
+
+
 
 
 

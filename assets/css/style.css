@@ -1,8 +1,11 @@
+body {
+  background-image: url('../images/pexels-photo-531756.jpeg');
+}
 img {
   width: 100px;
   height: 100px;
   padding: 0px, 0px;
-  margin: 0px;
+  margin: 20px;
 
 }
 
@@ -17,4 +20,19 @@ img {
 
 h1{
   text-align: center;
+  font-size: 80px;
+  color: white;
+}
+
+p {
+  color: white;
+  background-color: blue;
+  font-size: 20px;
+}
+
+.lossWin {
+  font-size: 25px;
+  background-color: blue;
+  color: white;
+  margin: 30px;
 }
